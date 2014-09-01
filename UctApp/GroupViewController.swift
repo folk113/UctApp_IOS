@@ -50,10 +50,10 @@ class GroupViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int
     {
-        if selectedIndex > 0
-        {
-            return 6
-        }
+//        if selectedIndex > 0
+//        {
+//            return 6
+//        }
         return 5
     }
     

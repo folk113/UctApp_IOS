@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupCellViewController: UITableViewCell {
+class GroupCellView: UITableViewCell {
 
     
 
