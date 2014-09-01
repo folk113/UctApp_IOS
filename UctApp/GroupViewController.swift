@@ -12,7 +12,8 @@ class GroupViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     
     @IBOutlet weak var tableView:UITableView!
-    let groupcell_identifier = "groupcell"
+    let groupcell_identifier = "cell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -52,7 +53,7 @@ class GroupViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!
     {
         
-        var cell: UITableViewCell! = tableView.dequeueReusableCellWithIdentifier(groupcell_identifier) as UITableViewCell
+        var cell: UITableViewCell! = self.tableView.dequeueReusableCellWithIdentifier(groupcell_identifier) as UITableViewCell
       
         cell.backgroundColor = UIColor.blueColor()
         return cell;

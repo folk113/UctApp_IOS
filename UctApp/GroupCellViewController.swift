@@ -11,7 +11,7 @@ import UIKit
 class GroupCellViewController: UITableViewCell{
 
  
-    @IBOutlet weak var label: UILabel!
+//    @IBOutlet weak var label: UILabel!
     
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
