@@ -54,8 +54,8 @@ class GroupViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     {
         
         var cell: UITableViewCell! = self.tableView.dequeueReusableCellWithIdentifier(groupcell_identifier) as UITableViewCell
-      
-        cell.backgroundColor = UIColor.blueColor()
+        cell.imageView.image = UIImage(named:"second")
+        cell.textLabel.text="label"
         return cell;
     }
     
