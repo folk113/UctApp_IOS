@@ -1,28 +1,15 @@
 //
-//  GroupCellViewController.swift
+//  GroupCellController.swift
 //  UctApp
 //
-//  Created by ptyt on 14-9-1.
+//  Created by folk113 on 14-8-31.
 //  Copyright (c) 2014年 ptyt. All rights reserved.
 //
 
 import UIKit
 
-class GroupCellViewController: UITableViewCell{
+class GroupCellViewController: UITableViewCell {
 
- 
-//    @IBOutlet weak var label: UILabel!
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
     
 
     /*

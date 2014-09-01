@@ -1,8 +1,8 @@
 //
-//  FirstViewController.swift
+//  GroupViewController.swift
 //  UctApp
 //
-//  Created by ptyt on 14-8-28.
+//  Created by folk113 on 14-8-31.
 //  Copyright (c) 2014年 ptyt. All rights reserved.
 //
 
@@ -10,41 +10,51 @@ import UIKit
 
 class GroupViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    @IBOutlet var tableView:UITableView?
+    let identifier = "cell";
+    var indexSet:NSIndexSet;
+    var selectedIndex:Int = -1;
     
-    @IBOutlet weak var tableView:UITableView!
-    let groupcell_identifier = "cell"
+    required init(coder aDecoder: NSCoder) {
+        indexSet = NSIndexSet(index:1)
+        super.init(coder: aDecoder)//        fatalError("init(coder:) has not been implemented")
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        var nib:UINib = UINib(nibName: "GroupCellView", bundle: nil)
+        self.tableView?.registerNib(nib, forCellReuseIdentifier: identifier)
+        self.tableView!.delegate = self
+        self.tableView!.dataSource = self
         
-       self.tableView.delegate = self
-       self.tableView.dataSource = self
-       var nib = UINib(nibName: "GroupCellViewController", bundle: nil);
-       self.tableView.registerNib(nib, forCellReuseIdentifier: groupcell_identifier)
-       
+        
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
-    func tableView(tableView: UITableView!, didDeselectRowAtIndexPath indexPath: NSIndexPath!) {
-        
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        
-    }
-    
- 
-    
+    */
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int
     {
-        return 6
+        if selectedIndex > 0
+        {
+            return 6
+        }
+        return 5
     }
     
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -52,13 +62,24 @@ class GroupViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!
     {
-        
-        var cell: UITableViewCell! = self.tableView.dequeueReusableCellWithIdentifier(groupcell_identifier) as UITableViewCell
-        cell.imageView.image = UIImage(named:"second")
-        cell.textLabel.text="label"
-        return cell;
+        var cell:UITableViewCell = self.tableView?.dequeueReusableCellWithIdentifier(identifier) as UITableViewCell
+//        cell.backgroundColor = UIColor.blueColor()
+        return cell
     }
     
     
-}
+    
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!)
+    {
+        tableView.insertSections(indexSet, withRowAnimation: UITableViewRowAnimation.None)
+        selectedIndex = 1
+    }
+    
+    func tableView(tableView: UITableView!, didDeselectRowAtIndexPath indexPath: NSIndexPath!)
+    {
+        tableView.deleteSections(indexSet, withRowAnimation: UITableViewRowAnimation.None)
+        selectedIndex = -1
+    }
 
+
+}
