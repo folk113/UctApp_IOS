@@ -79,20 +79,27 @@ class GroupViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 //        var sections: NSIndexSet! = NSIndexSet(indexesInRange: NSMakeRange(0,3))
 //        numInsert+=3
 //        self.tableView!.insertSections(sections, withRowAnimation: UITableViewRowAnimation.Top)
-//        self.tableView!.insertRowsAtIndexPaths(indexPaths: [AnyObject]!, withRowAnimation: <#UITableViewRowAnimation#>)
         
-       
-
-        numInsert -= 1
+        var indexP:NSIndexPath = NSIndexPath(forRow: indexPath.row+1, inSection: indexPath.section)
         
-        self.tableView!.deleteRowsAtIndexPaths(NSArray().arrayByAddingObject(indexPath), withRowAnimation:UITableViewRowAnimation.Bottom)
+        var paths:[AnyObject]? = [indexP]
+        
+        self.tableView!.insertRowsAtIndexPaths(paths!, withRowAnimation:UITableViewRowAnimation.Top)
+        numInsert += 1
+        
         self.tableView!.endUpdates()
     }
     
     func tableView(tableView: UITableView!, didDeselectRowAtIndexPath indexPath: NSIndexPath!)
     {
-//        tableView.deleteRowsAtIndexPaths(udata, withRowAnimation: UITableViewRowAnimation.None)
-        gdata.removeObjectsInArray(udata)
+        self.tableView!.beginUpdates()
+        
+        
+//        var indexP:NSIndexPath = NSIndexPath(forRow: indexPath.row-1, inSection: indexPath.section)
+//       self.tableView!.deleteRowsAtIndexPaths(NSArray().arrayByAddingObject(indexP), withRowAnimation:UITableViewRowAnimation.Bottom)
+//        
+//        numInsert -= 1
+        self.tableView!.endUpdates()
     }
 
 }
