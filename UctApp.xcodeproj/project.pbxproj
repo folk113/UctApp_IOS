@@ -17,8 +17,6 @@
 		841CFD7319AF1CFD00F2D3FD /* UctAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD7219AF1CFD00F2D3FD /* UctAppTests.swift */; };
 		841CFD8219AF223400F2D3FD /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD8119AF223400F2D3FD /* MsgViewController.swift */; };
 		841CFD8419AF224800F2D3FD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD8319AF224800F2D3FD /* SettingViewController.swift */; };
-		8455836819B84958009AC9B4 /* ZGroupModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8455836619B84958009AC9B4 /* ZGroupModel.cpp */; };
-		8455836B19B8496E009AC9B4 /* ZUserModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8455836919B8496E009AC9B4 /* ZUserModel.cpp */; };
 		8455836F19B85E1B009AC9B4 /* ZUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455836E19B85E1B009AC9B4 /* ZUserModel.swift */; };
 		8455837119B85E2B009AC9B4 /* ZGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455837019B85E2B009AC9B4 /* ZGroupModel.swift */; };
 /* End PBXBuildFile section */
@@ -49,11 +47,6 @@
 		841CFD8119AF223400F2D3FD /* MsgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgViewController.swift; sourceTree = "<group>"; };
 		841CFD8319AF224800F2D3FD /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		8455836519B84958009AC9B4 /* UctApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UctApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		8455836619B84958009AC9B4 /* ZGroupModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZGroupModel.cpp; sourceTree = "<group>"; };
-		8455836719B84958009AC9B4 /* ZGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGroupModel.h; sourceTree = "<group>"; };
-		8455836919B8496E009AC9B4 /* ZUserModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZUserModel.cpp; sourceTree = "<group>"; };
-		8455836A19B8496E009AC9B4 /* ZUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZUserModel.h; sourceTree = "<group>"; };
-		8455836C19B85B3B009AC9B4 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		8455836E19B85E1B009AC9B4 /* ZUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZUserModel.swift; sourceTree = "<group>"; };
 		8455837019B85E2B009AC9B4 /* ZGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZGroupModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,7 +72,6 @@
 		841CFD4F19AF1CFC00F2D3FD = {
 			isa = PBXGroup;
 			children = (
-				8455836C19B85B3B009AC9B4 /* libstdc++.6.0.9.dylib */,
 				841CFD5A19AF1CFD00F2D3FD /* UctApp */,
 				841CFD6F19AF1CFD00F2D3FD /* UctAppTests */,
 				841CFD5919AF1CFD00F2D3FD /* Products */,
@@ -182,10 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				8455836519B84958009AC9B4 /* UctApp-Bridging-Header.h */,
-				8455836619B84958009AC9B4 /* ZGroupModel.cpp */,
-				8455836719B84958009AC9B4 /* ZGroupModel.h */,
-				8455836919B8496E009AC9B4 /* ZUserModel.cpp */,
-				8455836A19B8496E009AC9B4 /* ZUserModel.h */,
 				8455836E19B85E1B009AC9B4 /* ZUserModel.swift */,
 				8455837019B85E2B009AC9B4 /* ZGroupModel.swift */,
 			);
@@ -309,8 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8455836819B84958009AC9B4 /* ZGroupModel.cpp in Sources */,
-				8455836B19B8496E009AC9B4 /* ZUserModel.cpp in Sources */,
 				841CFD8419AF224800F2D3FD /* SettingViewController.swift in Sources */,
 				841CFD8219AF223400F2D3FD /* MsgViewController.swift in Sources */,
 				8455837119B85E2B009AC9B4 /* ZGroupModel.swift in Sources */,

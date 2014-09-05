@@ -10,28 +10,25 @@ import UIKit
 
 class GroupViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    @IBOutlet var tableView:UITableView?
-    let identifier = "cell"
-    var indexSet:NSIndexSet
-    var selectedIndex:Int = -1
+    @IBOutlet var tableView:UITableView!
     
-    var gdata:NSMutableArray = NSMutableArray()
-    var udata:NSArray = NSArray(array: ["成员1","成员2","成员3"])
+    let group_identifier = "group_cell"
+    let user_identifier = "user_cell"
+    var data:NSMutableArray = NSMutableArray()
     
     required init(coder aDecoder: NSCoder) {
-        indexSet = NSIndexSet(index:1)
         super.init(coder: aDecoder)
-        //fatalError("init(coder:) has not been implemented")
-        gdata.addObjectsFromArray(["一组","二组","三组"])
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         var nib:UINib = UINib(nibName: "GroupCellView", bundle: nil)
-        self.tableView!.registerNib(nib, forCellReuseIdentifier: identifier)
-        self.tableView!.delegate = self
-        self.tableView!.dataSource = self
+        self.tableView.registerNib(nib, forCellReuseIdentifier: group_identifier)
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,11 +57,13 @@ class GroupViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!
     {
-        var cell:UITableViewCell = self.tableView?.dequeueReusableCellWithIdentifier(identifier) as UITableViewCell
         
-        cell.textLabel.text = "label"//gdata.objectAtIndex(indexPath.row) as NSString
-        cell.imageView.image = UIImage(named: "second")        
-//        cell.detailTextLabel!.text = "detail"
+        var cell:GroupCellView? = self.tableView!.dequeueReusableCellWithIdentifier(group_identifier) as? GroupCellView
+        
+        cell!.textLabel.text = "label_" + indexPath.row.description
+        //gdata.objectAtIndex(indexPath.row) as NSString
+        cell!.imageView.image = UIImage(named: "second")
+        cell!.detailTextLabel!.text = "detail_" + indexPath.row.description
         return cell
     }
     
