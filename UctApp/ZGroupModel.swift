@@ -11,47 +11,42 @@ import Foundation
 
 class ZGroupModel:NSObject
 {
-    var users:NSMutableArray = NSMutableArray()
+    var layer:Int = 0
+    var childs:NSMutableArray = NSMutableArray()
     var name:NSString?
-    {
-        set{
-            self.name = newValue
-        }
-        get{
-           return self.name
-        }
-    }
     var number:NSString?
-    {
-        set{
-            self.number = newValue
-        }get{
-            return self.number
-        }
-    }
     
     override init()
     {
         super.init()
     }
     
-    convenience init(_ name:NSString!,_ number:NSString!)
+    convenience init(_ name:NSString!,number:NSString!)
     {
         self.init()
         self.name = name
         self.number = number
     }
     
-    convenience init(_ name:NSString!,_ number:NSString!,_ users:NSArray)
+    
+    convenience init(_ name:NSString!,number:NSString!,users:[ZGroupModel])
     {
-        self.init(name,number);
-        
+        self.init(name,number: number);
+        addChilds(users)
     }
     
-    func addUser(user:ZUserModel!)
+    func addUser(user:ZGroupModel!)
     {
-        users.addObject(user)
+        childs.addObject(user)
     }   
     
+    func addChilds(users:[ZGroupModel])
+    {
+        self.childs.addObjectsFromArray(users);
+    }
+    func clearUser()
+    {
+        self.childs.removeAllObjects()
+    }
     
 }
