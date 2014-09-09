@@ -10,8 +10,6 @@
 		2D7D7DAC19B2FEC200C8E725 /* GroupCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D7DAB19B2FEC200C8E725 /* GroupCellView.xib */; };
 		2D7D7DAE19B2FF3B00C8E725 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D7DAD19B2FF3B00C8E725 /* GroupViewController.swift */; };
 		2D7D7DB019B3005500C8E725 /* GroupCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D7DAF19B3005500C8E725 /* GroupCellView.swift */; };
-		2D91C8DF19BDD25900252294 /* GroupCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C8DE19BDD25900252294 /* GroupCellModel.swift */; };
-		2DC96CF019BD354D0047911C /* TableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC96CEF19BD354D0047911C /* TableCellProtocol.swift */; };
 		841CFD5E19AF1CFD00F2D3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD5D19AF1CFD00F2D3FD /* AppDelegate.swift */; };
 		841CFD6219AF1CFD00F2D3FD /* DailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD6119AF1CFD00F2D3FD /* DailerViewController.swift */; };
 		841CFD6519AF1CFD00F2D3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841CFD6319AF1CFD00F2D3FD /* Main.storyboard */; };
@@ -20,6 +18,10 @@
 		841CFD8219AF223400F2D3FD /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD8119AF223400F2D3FD /* MsgViewController.swift */; };
 		841CFD8419AF224800F2D3FD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD8319AF224800F2D3FD /* SettingViewController.swift */; };
 		8455837119B85E2B009AC9B4 /* ZGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455837019B85E2B009AC9B4 /* ZGroupModel.swift */; };
+		84BC064F19BED2EC002ADD56 /* UIExpandableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC064E19BED2EC002ADD56 /* UIExpandableListView.swift */; };
+		84BC065119BED39E002ADD56 /* UIExpandableListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC065019BED39E002ADD56 /* UIExpandableListViewDataSource.swift */; };
+		84BC065619BF2314002ADD56 /* SubGroupCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC065419BF2314002ADD56 /* SubGroupCellView.swift */; };
+		84BC065719BF2314002ADD56 /* SubGroupCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC065519BF2314002ADD56 /* SubGroupCellView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +38,6 @@
 		2D7D7DAB19B2FEC200C8E725 /* GroupCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCellView.xib; sourceTree = "<group>"; };
 		2D7D7DAD19B2FF3B00C8E725 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		2D7D7DAF19B3005500C8E725 /* GroupCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCellView.swift; sourceTree = "<group>"; };
-		2D91C8DE19BDD25900252294 /* GroupCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupCellModel.swift; path = group/GroupCellModel.swift; sourceTree = "<group>"; };
-		2DC96CEF19BD354D0047911C /* TableCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellProtocol.swift; sourceTree = "<group>"; };
 		841CFD5819AF1CFD00F2D3FD /* UctApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UctApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841CFD5C19AF1CFD00F2D3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841CFD5D19AF1CFD00F2D3FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +51,10 @@
 		841CFD8319AF224800F2D3FD /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		8455836519B84958009AC9B4 /* UctApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UctApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		8455837019B85E2B009AC9B4 /* ZGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZGroupModel.swift; sourceTree = "<group>"; };
+		84BC064E19BED2EC002ADD56 /* UIExpandableListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExpandableListView.swift; path = ui/comm/UIExpandableListView.swift; sourceTree = "<group>"; };
+		84BC065019BED39E002ADD56 /* UIExpandableListViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExpandableListViewDataSource.swift; path = ui/comm/UIExpandableListViewDataSource.swift; sourceTree = "<group>"; };
+		84BC065419BF2314002ADD56 /* SubGroupCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubGroupCellView.swift; path = ui/group/SubGroupCellView.swift; sourceTree = "<group>"; };
+		84BC065519BF2314002ADD56 /* SubGroupCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SubGroupCellView.xib; path = ui/group/SubGroupCellView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 		841CFD7C19AF216600F2D3FD /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				84BC064B19BECDF4002ADD56 /* comm */,
 				841CFD7D19AF216F00F2D3FD /* group */,
 				841CFD7E19AF218100F2D3FD /* dailer */,
 				841CFD7F19AF218D00F2D3FD /* msg */,
@@ -144,8 +149,8 @@
 				2D7D7DAB19B2FEC200C8E725 /* GroupCellView.xib */,
 				2D7D7DAF19B3005500C8E725 /* GroupCellView.swift */,
 				2D7D7DAD19B2FF3B00C8E725 /* GroupViewController.swift */,
-				2DC96CEF19BD354D0047911C /* TableCellProtocol.swift */,
-				2D91C8DE19BDD25900252294 /* GroupCellModel.swift */,
+				84BC065419BF2314002ADD56 /* SubGroupCellView.swift */,
+				84BC065519BF2314002ADD56 /* SubGroupCellView.xib */,
 			);
 			name = group;
 			sourceTree = "<group>";
@@ -181,6 +186,15 @@
 				8455837019B85E2B009AC9B4 /* ZGroupModel.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		84BC064B19BECDF4002ADD56 /* comm */ = {
+			isa = PBXGroup;
+			children = (
+				84BC064E19BED2EC002ADD56 /* UIExpandableListView.swift */,
+				84BC065019BED39E002ADD56 /* UIExpandableListViewDataSource.swift */,
+			);
+			name = comm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +281,7 @@
 				2D7D7DAC19B2FEC200C8E725 /* GroupCellView.xib in Resources */,
 				841CFD6519AF1CFD00F2D3FD /* Main.storyboard in Resources */,
 				841CFD6719AF1CFD00F2D3FD /* Images.xcassets in Resources */,
+				84BC065719BF2314002ADD56 /* SubGroupCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,13 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DC96CF019BD354D0047911C /* TableCellProtocol.swift in Sources */,
 				841CFD8419AF224800F2D3FD /* SettingViewController.swift in Sources */,
+				84BC064F19BED2EC002ADD56 /* UIExpandableListView.swift in Sources */,
 				841CFD8219AF223400F2D3FD /* MsgViewController.swift in Sources */,
 				8455837119B85E2B009AC9B4 /* ZGroupModel.swift in Sources */,
 				841CFD6219AF1CFD00F2D3FD /* DailerViewController.swift in Sources */,
-				2D91C8DF19BDD25900252294 /* GroupCellModel.swift in Sources */,
 				2D7D7DB019B3005500C8E725 /* GroupCellView.swift in Sources */,
+				84BC065119BED39E002ADD56 /* UIExpandableListViewDataSource.swift in Sources */,
+				84BC065619BF2314002ADD56 /* SubGroupCellView.swift in Sources */,
 				841CFD5E19AF1CFD00F2D3FD /* AppDelegate.swift in Sources */,
 				2D7D7DAE19B2FF3B00C8E725 /* GroupViewController.swift in Sources */,
 			);
