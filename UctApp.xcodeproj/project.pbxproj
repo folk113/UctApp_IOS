@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D72A81319C09375004BA4AE /* AudioDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72A81219C09375004BA4AE /* AudioDevice.swift */; };
+		2D72A81519C097C5004BA4AE /* GpsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72A81419C097C5004BA4AE /* GpsManager.swift */; };
+		2D72A81719C09920004BA4AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D72A81619C09920004BA4AE /* CoreLocation.framework */; };
 		841CFD5E19AF1CFD00F2D3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD5D19AF1CFD00F2D3FD /* AppDelegate.swift */; };
 		841CFD6519AF1CFD00F2D3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841CFD6319AF1CFD00F2D3FD /* Main.storyboard */; };
 		841CFD6719AF1CFD00F2D3FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841CFD6619AF1CFD00F2D3FD /* Images.xcassets */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D72A81219C09375004BA4AE /* AudioDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioDevice.swift; path = control/device/AudioDevice.swift; sourceTree = "<group>"; };
+		2D72A81419C097C5004BA4AE /* GpsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GpsManager.swift; path = control/device/GpsManager.swift; sourceTree = "<group>"; };
+		2D72A81619C09920004BA4AE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		841CFD5819AF1CFD00F2D3FD /* UctApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UctApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841CFD5C19AF1CFD00F2D3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841CFD5D19AF1CFD00F2D3FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D72A81719C09920004BA4AE /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D72A81119C09336004BA4AE /* device */ = {
+			isa = PBXGroup;
+			children = (
+				2D72A81219C09375004BA4AE /* AudioDevice.swift */,
+				2D72A81419C097C5004BA4AE /* GpsManager.swift */,
+			);
+			name = device;
+			sourceTree = "<group>";
+		};
 		841CFD4F19AF1CFC00F2D3FD = {
 			isa = PBXGroup;
 			children = (
+				2D72A81619C09920004BA4AE /* CoreLocation.framework */,
 				841CFD5A19AF1CFD00F2D3FD /* UctApp */,
 				841CFD6F19AF1CFD00F2D3FD /* UctAppTests */,
 				841CFD5919AF1CFD00F2D3FD /* Products */,
@@ -203,6 +220,7 @@
 		84C30B1E19C0209A00353635 /* control */ = {
 			isa = PBXGroup;
 			children = (
+				2D72A81119C09336004BA4AE /* device */,
 				84C30B1F19C05A1800353635 /* StatusBarManager.swift */,
 			);
 			name = control;
@@ -328,9 +346,11 @@
 			files = (
 				84C30B1719C01FE700353635 /* GroupViewController.swift in Sources */,
 				84C30B1B19C0200500353635 /* MsgViewController.swift in Sources */,
+				2D72A81319C09375004BA4AE /* AudioDevice.swift in Sources */,
 				84C30B1119C01FD100353635 /* ZGroupModel.swift in Sources */,
 				84C30B1919C01FF900353635 /* DailerViewController.swift in Sources */,
 				84BC064F19BED2EC002ADD56 /* UIExpandableListView.swift in Sources */,
+				2D72A81519C097C5004BA4AE /* GpsManager.swift in Sources */,
 				84C30B1D19C0201200353635 /* SettingViewController.swift in Sources */,
 				84C30B2019C05A1800353635 /* StatusBarManager.swift in Sources */,
 				84BC065119BED39E002ADD56 /* UIExpandableListViewDataSource.swift in Sources */,

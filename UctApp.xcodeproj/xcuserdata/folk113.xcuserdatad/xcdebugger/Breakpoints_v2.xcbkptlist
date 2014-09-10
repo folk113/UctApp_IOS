@@ -49,36 +49,6 @@
             endingLineNumber = "211"
             landmarkName = "deleteUser(_:_:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UctApp.GroupViewController.deleteUser (UctApp.GroupViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITableView&gt;, Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSIndexPath&gt;) -&gt; ()"
-                  moduleName = "UctApp"
-                  urlString = "file:///Users/folk113/Desktop/UctApp_IOS/UctApp/GroupViewController.swift"
-                  timestampString = "431847757.988245"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "211"
-                  endingLineNumber = "211"
-                  offsetFromSymbolStart = "2208">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UctApp.GroupViewController.deleteUser (UctApp.GroupViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITableView&gt;, Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSIndexPath&gt;) -&gt; ()"
-                  moduleName = "UctApp"
-                  urlString = "file:///Users/folk113/Desktop/UctApp_IOS/UctApp/GroupViewController.swift"
-                  timestampString = "431847757.988459"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "211"
-                  endingLineNumber = "211"
-                  offsetFromSymbolStart = "2220">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
