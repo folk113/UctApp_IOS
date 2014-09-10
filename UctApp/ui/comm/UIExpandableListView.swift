@@ -39,7 +39,7 @@ class UIExpandableListView: UITableView,UITableViewDataSource,UITableViewDelegat
     }
     
     
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         if isExpanded
         {
@@ -51,7 +51,7 @@ class UIExpandableListView: UITableView,UITableViewDataSource,UITableViewDelegat
         }
     }
    
-    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         if isExpanded
         {
@@ -71,7 +71,7 @@ class UIExpandableListView: UITableView,UITableViewDataSource,UITableViewDelegat
         }
     }
     
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!)
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         if !isExpanded
         {
@@ -115,7 +115,7 @@ class UIExpandableListView: UITableView,UITableViewDataSource,UITableViewDelegat
     }
     
     @availability(iOS, introduced=3.0)
-    func tableView(tableView: UITableView!, didDeselectRowAtIndexPath indexPath: NSIndexPath!)
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath)
     {
 //        if isExpanded
 //        {
@@ -127,7 +127,7 @@ class UIExpandableListView: UITableView,UITableViewDataSource,UITableViewDelegat
 //        }
     }
     
-    func deleteRow(tableView: UITableView!,_ indexPath: NSIndexPath!,_ sublistCount:Int)
+    func deleteRow(tableView: UITableView,_ indexPath: NSIndexPath!,_ sublistCount:Int)
     {
         isExpanded = false
         tableView.beginUpdates()

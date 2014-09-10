@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D7D7DAC19B2FEC200C8E725 /* GroupCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D7DAB19B2FEC200C8E725 /* GroupCellView.xib */; };
-		2D7D7DAE19B2FF3B00C8E725 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D7DAD19B2FF3B00C8E725 /* GroupViewController.swift */; };
-		2D7D7DB019B3005500C8E725 /* GroupCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D7DAF19B3005500C8E725 /* GroupCellView.swift */; };
 		841CFD5E19AF1CFD00F2D3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD5D19AF1CFD00F2D3FD /* AppDelegate.swift */; };
-		841CFD6219AF1CFD00F2D3FD /* DailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD6119AF1CFD00F2D3FD /* DailerViewController.swift */; };
 		841CFD6519AF1CFD00F2D3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841CFD6319AF1CFD00F2D3FD /* Main.storyboard */; };
 		841CFD6719AF1CFD00F2D3FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841CFD6619AF1CFD00F2D3FD /* Images.xcassets */; };
 		841CFD7319AF1CFD00F2D3FD /* UctAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD7219AF1CFD00F2D3FD /* UctAppTests.swift */; };
-		841CFD8219AF223400F2D3FD /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD8119AF223400F2D3FD /* MsgViewController.swift */; };
-		841CFD8419AF224800F2D3FD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD8319AF224800F2D3FD /* SettingViewController.swift */; };
-		8455837119B85E2B009AC9B4 /* ZGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455837019B85E2B009AC9B4 /* ZGroupModel.swift */; };
 		84BC064F19BED2EC002ADD56 /* UIExpandableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC064E19BED2EC002ADD56 /* UIExpandableListView.swift */; };
 		84BC065119BED39E002ADD56 /* UIExpandableListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC065019BED39E002ADD56 /* UIExpandableListViewDataSource.swift */; };
 		84BC065619BF2314002ADD56 /* SubGroupCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC065419BF2314002ADD56 /* SubGroupCellView.swift */; };
 		84BC065719BF2314002ADD56 /* SubGroupCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC065519BF2314002ADD56 /* SubGroupCellView.xib */; };
+		84C30B1119C01FD100353635 /* ZGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30B1019C01FD100353635 /* ZGroupModel.swift */; };
+		84C30B1519C01FE700353635 /* GroupCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30B1219C01FE700353635 /* GroupCellView.swift */; };
+		84C30B1619C01FE700353635 /* GroupCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C30B1319C01FE700353635 /* GroupCellView.xib */; };
+		84C30B1719C01FE700353635 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30B1419C01FE700353635 /* GroupViewController.swift */; };
+		84C30B1919C01FF900353635 /* DailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30B1819C01FF900353635 /* DailerViewController.swift */; };
+		84C30B1B19C0200500353635 /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30B1A19C0200500353635 /* MsgViewController.swift */; };
+		84C30B1D19C0201200353635 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30B1C19C0201200353635 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,26 +35,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D7D7DAB19B2FEC200C8E725 /* GroupCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCellView.xib; sourceTree = "<group>"; };
-		2D7D7DAD19B2FF3B00C8E725 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
-		2D7D7DAF19B3005500C8E725 /* GroupCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCellView.swift; sourceTree = "<group>"; };
 		841CFD5819AF1CFD00F2D3FD /* UctApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UctApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841CFD5C19AF1CFD00F2D3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841CFD5D19AF1CFD00F2D3FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		841CFD6119AF1CFD00F2D3FD /* DailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailerViewController.swift; sourceTree = "<group>"; };
 		841CFD6419AF1CFD00F2D3FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		841CFD6619AF1CFD00F2D3FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		841CFD6C19AF1CFD00F2D3FD /* UctAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UctAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841CFD7119AF1CFD00F2D3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841CFD7219AF1CFD00F2D3FD /* UctAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UctAppTests.swift; sourceTree = "<group>"; };
-		841CFD8119AF223400F2D3FD /* MsgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgViewController.swift; sourceTree = "<group>"; };
-		841CFD8319AF224800F2D3FD /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		8455836519B84958009AC9B4 /* UctApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UctApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		8455837019B85E2B009AC9B4 /* ZGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZGroupModel.swift; sourceTree = "<group>"; };
 		84BC064E19BED2EC002ADD56 /* UIExpandableListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExpandableListView.swift; path = ui/comm/UIExpandableListView.swift; sourceTree = "<group>"; };
 		84BC065019BED39E002ADD56 /* UIExpandableListViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExpandableListViewDataSource.swift; path = ui/comm/UIExpandableListViewDataSource.swift; sourceTree = "<group>"; };
 		84BC065419BF2314002ADD56 /* SubGroupCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubGroupCellView.swift; path = ui/group/SubGroupCellView.swift; sourceTree = "<group>"; };
 		84BC065519BF2314002ADD56 /* SubGroupCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SubGroupCellView.xib; path = ui/group/SubGroupCellView.xib; sourceTree = "<group>"; };
+		84C30B1019C01FD100353635 /* ZGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZGroupModel.swift; path = model/ZGroupModel.swift; sourceTree = "<group>"; };
+		84C30B1219C01FE700353635 /* GroupCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupCellView.swift; path = ui/group/GroupCellView.swift; sourceTree = "<group>"; };
+		84C30B1319C01FE700353635 /* GroupCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GroupCellView.xib; path = ui/group/GroupCellView.xib; sourceTree = "<group>"; };
+		84C30B1419C01FE700353635 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupViewController.swift; path = ui/group/GroupViewController.swift; sourceTree = "<group>"; };
+		84C30B1819C01FF900353635 /* DailerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailerViewController.swift; path = ui/dailer/DailerViewController.swift; sourceTree = "<group>"; };
+		84C30B1A19C0200500353635 /* MsgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MsgViewController.swift; path = ui/msg/MsgViewController.swift; sourceTree = "<group>"; };
+		84C30B1C19C0201200353635 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = ui/setting/SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +146,9 @@
 		841CFD7D19AF216F00F2D3FD /* group */ = {
 			isa = PBXGroup;
 			children = (
-				2D7D7DAB19B2FEC200C8E725 /* GroupCellView.xib */,
-				2D7D7DAF19B3005500C8E725 /* GroupCellView.swift */,
-				2D7D7DAD19B2FF3B00C8E725 /* GroupViewController.swift */,
+				84C30B1219C01FE700353635 /* GroupCellView.swift */,
+				84C30B1319C01FE700353635 /* GroupCellView.xib */,
+				84C30B1419C01FE700353635 /* GroupViewController.swift */,
 				84BC065419BF2314002ADD56 /* SubGroupCellView.swift */,
 				84BC065519BF2314002ADD56 /* SubGroupCellView.xib */,
 			);
@@ -158,7 +158,7 @@
 		841CFD7E19AF218100F2D3FD /* dailer */ = {
 			isa = PBXGroup;
 			children = (
-				841CFD6119AF1CFD00F2D3FD /* DailerViewController.swift */,
+				84C30B1819C01FF900353635 /* DailerViewController.swift */,
 			);
 			name = dailer;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 		841CFD7F19AF218D00F2D3FD /* msg */ = {
 			isa = PBXGroup;
 			children = (
-				841CFD8119AF223400F2D3FD /* MsgViewController.swift */,
+				84C30B1A19C0200500353635 /* MsgViewController.swift */,
 			);
 			name = msg;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 		841CFD8019AF219200F2D3FD /* setting */ = {
 			isa = PBXGroup;
 			children = (
-				841CFD8319AF224800F2D3FD /* SettingViewController.swift */,
+				84C30B1C19C0201200353635 /* SettingViewController.swift */,
 			);
 			name = setting;
 			sourceTree = "<group>";
@@ -182,8 +182,8 @@
 		8455836419B847B8009AC9B4 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				84C30B1019C01FD100353635 /* ZGroupModel.swift */,
 				8455836519B84958009AC9B4 /* UctApp-Bridging-Header.h */,
-				8455837019B85E2B009AC9B4 /* ZGroupModel.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -278,10 +278,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D7D7DAC19B2FEC200C8E725 /* GroupCellView.xib in Resources */,
 				841CFD6519AF1CFD00F2D3FD /* Main.storyboard in Resources */,
 				841CFD6719AF1CFD00F2D3FD /* Images.xcassets in Resources */,
 				84BC065719BF2314002ADD56 /* SubGroupCellView.xib in Resources */,
+				84C30B1619C01FE700353635 /* GroupCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,16 +315,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841CFD8419AF224800F2D3FD /* SettingViewController.swift in Sources */,
+				84C30B1719C01FE700353635 /* GroupViewController.swift in Sources */,
+				84C30B1B19C0200500353635 /* MsgViewController.swift in Sources */,
+				84C30B1119C01FD100353635 /* ZGroupModel.swift in Sources */,
+				84C30B1919C01FF900353635 /* DailerViewController.swift in Sources */,
 				84BC064F19BED2EC002ADD56 /* UIExpandableListView.swift in Sources */,
-				841CFD8219AF223400F2D3FD /* MsgViewController.swift in Sources */,
-				8455837119B85E2B009AC9B4 /* ZGroupModel.swift in Sources */,
-				841CFD6219AF1CFD00F2D3FD /* DailerViewController.swift in Sources */,
-				2D7D7DB019B3005500C8E725 /* GroupCellView.swift in Sources */,
+				84C30B1D19C0201200353635 /* SettingViewController.swift in Sources */,
 				84BC065119BED39E002ADD56 /* UIExpandableListViewDataSource.swift in Sources */,
 				84BC065619BF2314002ADD56 /* SubGroupCellView.swift in Sources */,
 				841CFD5E19AF1CFD00F2D3FD /* AppDelegate.swift in Sources */,
-				2D7D7DAE19B2FF3B00C8E725 /* GroupViewController.swift in Sources */,
+				84C30B1519C01FE700353635 /* GroupCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

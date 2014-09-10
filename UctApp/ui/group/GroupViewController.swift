@@ -65,7 +65,7 @@ class GroupViewController: UIViewController,UIExpandableListViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
-    func getGroupCount(tableView: UITableView!, _ section: Int)->Int
+    func getGroupCount(tableView: UITableView, _ section: Int)->Int
     {
         return data.count
     }
@@ -76,25 +76,25 @@ class GroupViewController: UIViewController,UIExpandableListViewDataSource {
         return group.childs.count
     }
     
-    func getGroupCellView(tableView: UITableView!, _ section:Int,_ groupRow:Int) -> UITableViewCell!
+    func getGroupCellView(tableView: UITableView, _ section:Int,_ groupRow:Int) -> UITableViewCell
     {
         var cell:GroupCellView! = self.tableView!.dequeueReusableCellWithIdentifier(group_identifier) as GroupCellView
         var group:ZGroupModel = data.objectAtIndex(groupRow) as ZGroupModel
         
-        cell.imageView.image = UIImage(named:"first")
-        cell.textLabel.text = group.name
-        cell.detailTextLabel.text =  group.number
+        cell.imageView!.image = UIImage(named:"first")
+        cell.textLabel!.text = group.name
+        cell.detailTextLabel!.text =  group.number
         return cell
     }
-    func getSubGroupCellView(tableView: UITableView!, _ section:Int,_ groupRow:Int,_ subGroupRow:Int) -> UITableViewCell!
+    func getSubGroupCellView(tableView: UITableView, _ section:Int,_ groupRow:Int,_ subGroupRow:Int) -> UITableViewCell
     {
         var cell:SubGroupCellView! = self.tableView!.dequeueReusableCellWithIdentifier(subgroup_identifier) as SubGroupCellView
         var group:ZGroupModel = data.objectAtIndex(groupRow) as ZGroupModel
         var subGroup:ZGroupModel = group.childs.objectAtIndex(subGroupRow) as ZGroupModel
         
-        cell.imageView.image = UIImage(named:"second")
-        cell.textLabel.text = subGroup.name
-        cell.detailTextLabel.text =  subGroup.number
+        cell.imageView!.image = UIImage(named:"second")
+        cell.textLabel!.text = subGroup.name
+        cell.detailTextLabel!.text =  subGroup.number
         return cell
     }
 
