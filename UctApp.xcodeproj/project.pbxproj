@@ -22,6 +22,7 @@
 		84C30B1919C01FF900353635 /* DailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30B1819C01FF900353635 /* DailerViewController.swift */; };
 		84C30B1B19C0200500353635 /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30B1A19C0200500353635 /* MsgViewController.swift */; };
 		84C30B1D19C0201200353635 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30B1C19C0201200353635 /* SettingViewController.swift */; };
+		84C30B2019C05A1800353635 /* StatusBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30B1F19C05A1800353635 /* StatusBarManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		84C30B1819C01FF900353635 /* DailerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailerViewController.swift; path = ui/dailer/DailerViewController.swift; sourceTree = "<group>"; };
 		84C30B1A19C0200500353635 /* MsgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MsgViewController.swift; path = ui/msg/MsgViewController.swift; sourceTree = "<group>"; };
 		84C30B1C19C0201200353635 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = ui/setting/SettingViewController.swift; sourceTree = "<group>"; };
+		84C30B1F19C05A1800353635 /* StatusBarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 		84C30B1E19C0209A00353635 /* control */ = {
 			isa = PBXGroup;
 			children = (
+				84C30B1F19C05A1800353635 /* StatusBarManager.swift */,
 			);
 			name = control;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				84C30B1919C01FF900353635 /* DailerViewController.swift in Sources */,
 				84BC064F19BED2EC002ADD56 /* UIExpandableListView.swift in Sources */,
 				84C30B1D19C0201200353635 /* SettingViewController.swift in Sources */,
+				84C30B2019C05A1800353635 /* StatusBarManager.swift in Sources */,
 				84BC065119BED39E002ADD56 /* UIExpandableListViewDataSource.swift in Sources */,
 				84BC065619BF2314002ADD56 /* SubGroupCellView.swift in Sources */,
 				841CFD5E19AF1CFD00F2D3FD /* AppDelegate.swift in Sources */,
