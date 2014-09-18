@@ -14,6 +14,8 @@
 		841CFD6519AF1CFD00F2D3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841CFD6319AF1CFD00F2D3FD /* Main.storyboard */; };
 		841CFD6719AF1CFD00F2D3FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841CFD6619AF1CFD00F2D3FD /* Images.xcassets */; };
 		841CFD7319AF1CFD00F2D3FD /* UctAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD7219AF1CFD00F2D3FD /* UctAppTests.swift */; };
+		8477CC3819CADEF600D2AF2B /* PureSwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CC3719CADEF600D2AF2B /* PureSwiftObject.swift */; };
+		8477CC3A19CAE39100D2AF2B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8477CC3919CAE39100D2AF2B /* CoreFoundation.framework */; };
 		84BC064F19BED2EC002ADD56 /* UIExpandableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC064E19BED2EC002ADD56 /* UIExpandableListView.swift */; };
 		84BC065119BED39E002ADD56 /* UIExpandableListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC065019BED39E002ADD56 /* UIExpandableListViewDataSource.swift */; };
 		84BC065619BF2314002ADD56 /* SubGroupCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC065419BF2314002ADD56 /* SubGroupCellView.swift */; };
@@ -50,7 +52,10 @@
 		841CFD6C19AF1CFD00F2D3FD /* UctAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UctAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841CFD7119AF1CFD00F2D3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841CFD7219AF1CFD00F2D3FD /* UctAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UctAppTests.swift; sourceTree = "<group>"; };
+		8454871D19CADD1800CCA469 /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomObject.h; path = oc/CustomObject.h; sourceTree = "<group>"; };
 		8455836519B84958009AC9B4 /* UctApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UctApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		8477CC3719CADEF600D2AF2B /* PureSwiftObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PureSwiftObject.swift; sourceTree = "<group>"; };
+		8477CC3919CAE39100D2AF2B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		84BC064E19BED2EC002ADD56 /* UIExpandableListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExpandableListView.swift; path = ui/comm/UIExpandableListView.swift; sourceTree = "<group>"; };
 		84BC065019BED39E002ADD56 /* UIExpandableListViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExpandableListViewDataSource.swift; path = ui/comm/UIExpandableListViewDataSource.swift; sourceTree = "<group>"; };
 		84BC065419BF2314002ADD56 /* SubGroupCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubGroupCellView.swift; path = ui/group/SubGroupCellView.swift; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 		84C30B1A19C0200500353635 /* MsgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MsgViewController.swift; path = ui/msg/MsgViewController.swift; sourceTree = "<group>"; };
 		84C30B1C19C0201200353635 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = ui/setting/SettingViewController.swift; sourceTree = "<group>"; };
 		84C30B1F19C05A1800353635 /* StatusBarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarManager.swift; sourceTree = "<group>"; };
+		84D42FC119CADD7300918984 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomObject.m; path = oc/CustomObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8477CC3A19CAE39100D2AF2B /* CoreFoundation.framework in Frameworks */,
 				2D72A81719C09920004BA4AE /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +103,7 @@
 		841CFD4F19AF1CFC00F2D3FD = {
 			isa = PBXGroup;
 			children = (
+				8477CC3919CAE39100D2AF2B /* CoreFoundation.framework */,
 				2D72A81619C09920004BA4AE /* CoreLocation.framework */,
 				841CFD5A19AF1CFD00F2D3FD /* UctApp */,
 				841CFD6F19AF1CFD00F2D3FD /* UctAppTests */,
@@ -115,6 +123,8 @@
 		841CFD5A19AF1CFD00F2D3FD /* UctApp */ = {
 			isa = PBXGroup;
 			children = (
+				8455836519B84958009AC9B4 /* UctApp-Bridging-Header.h */,
+				8454871C19CADCE500CCA469 /* oc */,
 				84C30B1E19C0209A00353635 /* control */,
 				8455836419B847B8009AC9B4 /* model */,
 				841CFD7C19AF216600F2D3FD /* ui */,
@@ -199,11 +209,20 @@
 			name = setting;
 			sourceTree = "<group>";
 		};
+		8454871C19CADCE500CCA469 /* oc */ = {
+			isa = PBXGroup;
+			children = (
+				8454871D19CADD1800CCA469 /* CustomObject.h */,
+				84D42FC119CADD7300918984 /* CustomObject.m */,
+				8477CC3719CADEF600D2AF2B /* PureSwiftObject.swift */,
+			);
+			name = oc;
+			sourceTree = "<group>";
+		};
 		8455836419B847B8009AC9B4 /* model */ = {
 			isa = PBXGroup;
 			children = (
 				84C30B1019C01FD100353635 /* ZGroupModel.swift */,
-				8455836519B84958009AC9B4 /* UctApp-Bridging-Header.h */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -353,6 +372,7 @@
 				2D72A81519C097C5004BA4AE /* GpsManager.swift in Sources */,
 				84C30B1D19C0201200353635 /* SettingViewController.swift in Sources */,
 				84C30B2019C05A1800353635 /* StatusBarManager.swift in Sources */,
+				8477CC3819CADEF600D2AF2B /* PureSwiftObject.swift in Sources */,
 				84BC065119BED39E002ADD56 /* UIExpandableListViewDataSource.swift in Sources */,
 				84BC065619BF2314002ADD56 /* SubGroupCellView.swift in Sources */,
 				841CFD5E19AF1CFD00F2D3FD /* AppDelegate.swift in Sources */,
@@ -472,6 +492,7 @@
 		841CFD7719AF1CFD00F2D3FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -480,15 +501,22 @@
 				INFOPLIST_FILE = UctApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+					"$(SDKROOT)/usr/lib/system/introspection",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "UctApp/UctApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		841CFD7819AF1CFD00F2D3FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -497,6 +525,11 @@
 				INFOPLIST_FILE = UctApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+					"$(SDKROOT)/usr/lib/system/introspection",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "UctApp/UctApp-Bridging-Header.h";
 			};
