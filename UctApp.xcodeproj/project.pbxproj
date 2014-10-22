@@ -10,6 +10,8 @@
 		2D72A81319C09375004BA4AE /* AudioDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72A81219C09375004BA4AE /* AudioDevice.swift */; };
 		2D72A81519C097C5004BA4AE /* GpsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72A81419C097C5004BA4AE /* GpsManager.swift */; };
 		2D72A81719C09920004BA4AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D72A81619C09920004BA4AE /* CoreLocation.framework */; };
+		2D7A268F19F7F56500F710CA /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D42FC119CADD7300918984 /* CustomObject.m */; };
+		2D7A269019F7F58500F710CA /* CustomObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 8454871D19CADD1800CCA469 /* CustomObject.h */; };
 		841CFD5E19AF1CFD00F2D3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD5D19AF1CFD00F2D3FD /* AppDelegate.swift */; };
 		841CFD6519AF1CFD00F2D3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841CFD6319AF1CFD00F2D3FD /* Main.storyboard */; };
 		841CFD6719AF1CFD00F2D3FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841CFD6619AF1CFD00F2D3FD /* Images.xcassets */; };
@@ -290,7 +292,7 @@
 		841CFD5019AF1CFC00F2D3FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = ptyt;
 				TargetAttributes = {
 					841CFD5719AF1CFD00F2D3FD = {
@@ -354,7 +356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode6-Beta7.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then /Applications/Xcode6-Beta7.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\";\nfi\n";
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode-Beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then /Applications/Xcode-Beta.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\";\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -363,6 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7A269019F7F58500F710CA /* CustomObject.h in Sources */,
+				2D7A268F19F7F56500F710CA /* CustomObject.m in Sources */,
+				8477CC3819CADEF600D2AF2B /* PureSwiftObject.swift in Sources */,
 				84C30B1719C01FE700353635 /* GroupViewController.swift in Sources */,
 				84C30B1B19C0200500353635 /* MsgViewController.swift in Sources */,
 				2D72A81319C09375004BA4AE /* AudioDevice.swift in Sources */,
@@ -372,7 +377,6 @@
 				2D72A81519C097C5004BA4AE /* GpsManager.swift in Sources */,
 				84C30B1D19C0201200353635 /* SettingViewController.swift in Sources */,
 				84C30B2019C05A1800353635 /* StatusBarManager.swift in Sources */,
-				8477CC3819CADEF600D2AF2B /* PureSwiftObject.swift in Sources */,
 				84BC065119BED39E002ADD56 /* UIExpandableListViewDataSource.swift in Sources */,
 				84BC065619BF2314002ADD56 /* SubGroupCellView.swift in Sources */,
 				841CFD5E19AF1CFD00F2D3FD /* AppDelegate.swift in Sources */,
@@ -444,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -481,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -492,7 +496,6 @@
 		841CFD7719AF1CFD00F2D3FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -516,7 +519,6 @@
 		841CFD7819AF1CFD00F2D3FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;

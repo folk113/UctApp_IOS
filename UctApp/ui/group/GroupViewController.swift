@@ -49,10 +49,10 @@ class GroupViewController: UIViewController,UIExpandableListViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var nib:UINib = UINib(nibName: "GroupCellView", bundle: nil)
+        var nib:UINib = UINib(nibName: "GroupCellView", bundle: nil)!
         self.tableView.registerNib(nib, forCellReuseIdentifier: group_identifier)
         
-        nib = UINib(nibName: "SubGroupCellView", bundle: nil)
+        nib = UINib(nibName: "SubGroupCellView", bundle: nil)!
         self.tableView.registerNib(nib, forCellReuseIdentifier: subgroup_identifier)
         
         self.tableView.mDataSource = self

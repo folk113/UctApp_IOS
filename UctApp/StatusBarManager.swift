@@ -16,7 +16,7 @@ class StatusBarManager: NSObject {
         var notification:UILocalNotification = UILocalNotification()
         
         // 设置通知的提醒时间
-        var currentDate:NSDate   = NSDate.date()
+        var currentDate:NSDate   = NSDate()
         notification.timeZone =  NSTimeZone.defaultTimeZone()// 使用本地时区
         notification.fireDate = currentDate.dateByAddingTimeInterval(5.0)
         

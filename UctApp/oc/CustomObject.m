@@ -7,7 +7,7 @@
 //
 
 #import "CustomObject.h"
-#import "UctApp-PureSwiftObject.h"
+//#import "UctApp-PureSwiftObject.h"
 
 @implementation CustomObject
 
